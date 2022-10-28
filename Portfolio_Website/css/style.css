@@ -1,0 +1,285 @@
+/* Root */
+:root{
+    /* color */
+    --primary: rgb(29, 221, 189);
+    --bgDark: rgb(12, 12, 12);
+    --white: rgb(250, 250, 250);
+    --secondary: rgb(0, 59, 50);
+    --bgLight: rgb(190, 181, 181);
+    --black: rgb(0, 0, 0);
+
+}
+/* CSS Reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background: var(--black);
+    
+} 
+/* Nav Styling */
+ul{
+    list-style-type: none;
+    background-color: var(--bgDark);
+    display: flex;
+    overflow: visible;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 1rem;
+}
+li, h1, a{
+    float: left;
+    color: var(--bgLight);
+    padding: 0.4rem 0.4rem;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    justify-content: space-between;
+}
+/* Change the link color on hover */
+li a:hover{
+    background-color: var(--secondary);
+}
+/* Home Page Styling */
+section, button{
+    float: center;
+    text-align: center;
+    justify-content: center;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+h2 {
+    font-size: 3rem;
+    text-align: center;
+    color: var(--primary);
+    padding: 5px;
+    justify-content: center;
+    color: var(--bgLight);
+}
+h3,
+p {
+    font-size: 2rem;
+    color: var(--primary);
+    text-align: center;
+    padding: 5px;
+    justify-content: center;
+    padding-top: 30px;
+}
+/* image styling */
+.ctn-img, img{
+    float: left;
+    padding: 0rem 0rem 0.5rem 0.1rem;
+    margin: 0rem 0.1rem 0.5rem 0.5rem;
+    width: 60%;
+    height: 25%; 
+     
+} 
+
+/* logo styling */
+.logo{
+    float: right;
+    height: 0.7rem;
+    width: 0.7rem;  
+    margin: 0.5rem;
+} 
+/* Check My Cv Botton Styling */
+.btn{
+    justify-content: center;
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--bgLight);
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-right: 0rem;
+    margin-bottom: 0rem;
+    padding-left: 1rem;
+}
+.btn:hover{
+    background: var(--secondary);
+    color: var(--bgLight);
+}
+
+/* About Section Styling */
+/* Those Elements Where We Have Apply Same CSS,
+ I'm Selecting Directly 'Section Tag' and 'Class'  */
+section {
+    padding-top: 40px;
+}
+
+section .content {
+    width: 80%;
+    margin: 40px auto;
+    padding: 40px auto;
+}
+
+.about .about-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+section .title span {
+    color: var(--primary);
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+section .title span::before,
+section .title span::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: var(--secondary);
+    left: 0;
+    bottom: 0;
+}
+
+section .title span::after {
+    bottom: -7px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.about .about-details .left {
+    width: 45%;
+}
+
+.about .left img {
+    height: 400px;
+    width: 500px;
+    object-fit:contain;
+    border-radius: 12px;
+    margin-right: 12px;
+    padding: 20px;
+}
+
+.about-details .right {
+    width: 55%;
+}
+
+section .topic {
+    color: var(--primary);
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.about-details .right p {
+    text-align: justify;
+    color: var(--white);
+    padding: 10px;
+}
+
+section .button {
+    margin: 16px 0;
+}
+
+section .button button {
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 25px;
+    font-weight: 400;
+    background: var(--primary);
+    color: var(--white);
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+section .button button:hover {
+    border-color: var(--primary);
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+/* My Services CSS */
+.services .boxes .box {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/* My Skills CSS */
+.project {
+    background: var(--bgLight);
+}
+
+.project .content {
+    padding: 40px 0;
+}
+
+.project .project-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-details .text {
+    width: 50%;
+}
+
+.project-details p {
+    color: var(--black);
+    text-align: justify;
+}
+
+.project .project-details .experience {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.project-details .experience .num {
+    color: var(--black);
+    font-size: 80px;
+}
+
+.project-details .experience .exp {
+    color: var(--black);
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 6px;
+}
+
+.project-details .boxes {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-details .box {
+    width: calc(100% / 2 - 20px);
+    margin: 20px 0;
+}
+
+.project-details .boxes .topic {
+    font-size: 20px;
+    color: var(--secondary);
+}
+
+.project-details .boxes .per {
+    font-size: 60px;
+    color: var(--secondary);
+}

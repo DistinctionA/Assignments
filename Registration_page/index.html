@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="container">
+    <div id="logo">
+        <img src="./images/logo-vreg.png" alt="Autoreg_Logo">
+    </div>
+    
+    <div class="container-1">
+    <h1>
+        Register Here
+    </h1>
+    <!-- Form  -->
+    <form action="Success.html">
+        <!-- FirstName -->
+        <label for="FirstName">FirstName</label>
+        <input type="text" placeholder="Enter your FirstName" name="input.fn" id="input_fn" required>
+    
+        <!-- LastName -->
+        <label for="LastName">LastName</label>
+        <input type="text" placeholder="Enter your LastName" name="input.ln" id="input_ln" required>
+
+        <!-- Phone Number -->
+        <label for="p_number">Phone No</label>
+        <input type="number" placeholder="+23480-0000-000" name="input.no" id="input_no" required>
+
+        <!-- Email -->
+        <label for="email">Email</label>
+        <input type="email" placeholder="xyz@yahoo.com" name="input.email" id="input_email" required>
+
+        <!-- Gender -->
+        <label for="gender">Gender</label><br>
+
+        <input class="g-c" type="radio" placeholder="" name="input.gender" id="input.gender" value="Male" required>
+        <label for="male">Male</label>
+
+        <input class="g-c" type="radio" placeholder="" name="input.gender" id="input.gender" value="Female" required>
+        <label for="female">Female</label>
+
+        <input class="g-c" type="radio" placeholder="" name="input.gender" id="input.gender" value="Prefer Not To Say" required>
+        <label for="pnts">Prefer Not To Say</label><br>
+        <br>
+
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth</label>
+        <input type="date" placeholder="" name="input.dob" id="input_dob" required>
+
+        <!-- Favourite color -->
+        <label for="color">Favourite color</label>
+        <input class="f-c" type="color" placeholder="" name="input.color" id="input_color" required>
+    
+        <!-- Submit Button -->
+        <button type="submit" class="registerbtn">
+            Register
+        </button>
+        <br>
+        <br>
+
+        <small>
+            Already have an Account?
+        </small>
+        <br>
+        <br>
+    
+        <p class="registerbtn">
+            <a href="login.html">Click Here To Login</a>
+        </p>
+    </form>
+    </div>
+    </div>
+
+
+    
+</body>
+</html>

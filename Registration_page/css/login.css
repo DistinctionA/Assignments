@@ -1,0 +1,76 @@
+/* Root Variables */
+:root {
+    /* color */
+    --primary: #f1f1f1;
+    --secondary: #ddd;
+    --white: #fff;
+    --bgDark: rgb(205, 127, 50);
+    --bgLight: rgb(171, 147, 107);
+    --black: black;
+}
+
+/* CSS reset */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background: var(--white) url("/images/highway.jpeg") no-repeat top right/contain;
+    background-position: 150%;
+    padding-top: 0rem;
+    padding-right: -10rem;
+    padding-bottom: 40rem;
+    padding-left: 0rem;
+}
+
+/* styling the Logo and form */
+#logo,
+form,
+h1 {
+    vertical-align: middle;
+    border-style: none;
+    align-items: flex;
+    justify-content: left;
+    text-align: center;
+    padding-right: 50rem;
+    padding-left: 2rem;
+}
+
+form {
+    text-align: left;
+
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+input:focus {
+    background-color: var(--secondary);
+    border: none;
+}
+.registerbtn,
+a {
+    width: 80%;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 51px;
+    background-color: var(--bgDark);
+    text-decoration: none;
+    margin: 10px;
+    color: var(--black);
+}
+
+a:hover {
+    background-color: var(--bgLight);
+}
