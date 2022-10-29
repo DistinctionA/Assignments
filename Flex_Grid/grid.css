@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root {
+    /* Color Declaration */
+    --BOrange: hsl(31, 77%, 52%);
+    --DkCyan: hsl(184, 100%, 22%);
+    --LightGray: hsl(0, 0%, 95%);
+    --Red: rgba(235, 80, 32, 255);
+    --yellow: rgba(255, 164, 1, 255);
+    --green: rgba(5, 170, 66, 255);
+    --blue: rgba(1, 174, 253, 255);
+    --black: rgba(26, 28, 40, 255);
+
+    /* Font Family */
+    --FontFamily400: 'Lexend Deca', sans-serif;
+    --FontFamily700: 'Big Shoulders Display', cursive;
+
+}
+body{
+    background-color: var(--black);
+    height: 100%;
+}
+
+/* Styling the Header */
+header {
+    width: 80%;
+    margin: auto;
+    background-color: var(--DkCyan);
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-item {
+    margin: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--black);
+    font-family: var(--FontFamily400);
+    font-size: 20px;
+    font-weight: 500;
+    width: 80%;
+    margin: auto;
+}
+
+.nav-item a:hover {
+    background-color: var(--BOrange);
+    color: var(--LightGray);
+    font-family: var(--FontFamily700);
+    padding: 10px 20px;
+    margin: 4px 2px;
+    border: none;
+    border-radius: 30px;
+}
+
+/* Grid Styling */
+.container{
+    height: 100%;
+    width: 70%;
+    justify-items: center;
+    align-items: center;
+    padding: 50px;
+    margin: auto;
+}
+.grid-container{
+    display: grid;
+    height: 400px;
+    grid-template-rows: repeat (4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-1{
+    background-color: var(--Red);
+    grid-row: span 3;
+    grid-column: span 3;
+}
+.item-2{
+    background-color: var(--yellow);
+    grid-row: span 3;
+    grid-column: span 2;
+}
+.item-3{
+    background-color: var(--green);
+    grid-row: span 3;
+    grid-column: span 2;
+}
+.item-4{
+    background-color: var(--blue);
+    grid-row: span 1;
+    grid-column: span 3;
+}
+.item-5{
+    background-color: var(--blue);
+    grid-row: span 2;
+    grid-column: span 3;
+}

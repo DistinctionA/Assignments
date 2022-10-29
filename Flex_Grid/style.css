@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root{
+    /* Color Declaration */
+    --BOrange: hsl(31, 77%, 52%);
+    --DkCyan: hsl(184, 100%, 22%);
+    --VDkCyan: hsl(179, 100%, 13%);
+    --TransWhite: hsla(0, 0%, 100%, 0.75);
+    --LightGray: hsl(0, 0%, 95%);
+    --black: rgb(0, 0, 0);
+
+    /* Font Family */
+    --FontFamily400: 'Lexend Deca', sans-serif;
+    --FontFamily700: 'Big Shoulders Display', cursive;
+
+}
+body{
+    background-color: var(--LightGray);
+}
+
+/* Styling the Header */
+header{
+    width: 80%;
+    margin: auto;
+    background-color: var(--DkCyan);
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-item{
+   margin: 20px;
+}
+.link{
+    text-decoration: none;
+    color: var(--black);
+    font-family: var(--FontFamily400);
+    font-size: 20px;
+    font-weight: 500;
+    width: 80%;
+    margin: auto;
+}
+.nav-item a:hover{
+    background-color:var(--BOrange);
+    color: var(--LightGray);
+    font-family: var(--FontFamily700);
+    padding: 10px 20px;
+    margin: 4px 2px;
+    border: none;
+    border-radius: 30px;
+}
+
+/* CSS Flex-Box */
+.container{
+    background-color: var(--LightGray);
+
+}
+.flex-container{
+    display: flex;
+    height: 90vh;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    padding: 20px;
+    margin: auto;
+    border-radius: 30px;
+}
+.flex-item{
+    padding: 30px 40px 15px 40px;
+    margin: auto;
+}
+.item1{
+    background-color: var(--BOrange);
+}
+.item2{
+    background-color: var(--DkCyan);
+}
+.item3{
+    background-color: var(--VDkCyan);
+}
+h1{
+    color: var(--LightGray);
+    font-family: var(--FontFamily700);
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+span{
+    color: var(--TransWhite);
+    font-family: var(--FontFamily400);
+    font-size: 15px;
+}
+
+/* Styling the button */
+.submit-container{
+    margin-top: 80px;
+    margin-bottom: 50px;
+
+}
+.submit-btn{
+    background-color: var(--LightGray);
+    font-family: var(--FontFamily400);
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+   padding: 10px 20px;
+    margin: 4px 2px;
+    border: none;
+    border-radius: 30px;
+}
+.submit1{
+    color: var(--BOrange);
+}
+.submit2{
+    color: var(--DkCyan);
+}
+.submit3{
+    color: var(--VDkCyan);
+}
+
+
+
+
+/* <!-- # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700 --> */
